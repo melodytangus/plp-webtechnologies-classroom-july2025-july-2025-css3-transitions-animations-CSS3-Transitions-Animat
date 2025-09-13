@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.hover-btn {
+  padding: 10px 20px;
+  font-size: 1.1em;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.3s ease;
+}
+
+.hover-btn:hover {
+  background: #2e7d32;
+  transform: scale(1.1);
+}
+
+.animated-box {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: coral;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); background: coral; }
+  50%  { transform: scale(1.2); background: tomato; }
+  100% { transform: scale(1); background: coral; }
+}
+
+#boxToAnimate {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: skyblue;
+  transition: transform 0.5s ease, background 0.5s ease;
+}
+
+#boxToAnimate.animate {
+  transform: rotate(360deg) scale(1.2);
+  background: royalblue;
+}
